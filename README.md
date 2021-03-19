@@ -30,7 +30,7 @@ The following are in order of the steps you'll need to follow to get started.
 
   This is how you register a KasaSmart account for the first time to get access to it.  This only needs to be done once.
 
-  KasaSmart_password is the password associated with the uuid.  These credentials are securely stored and used only when needed (for access key rotation) which is performed        automatically.
+  KasaSmart_password is the password associated with the uuid.  These credentials are securely stored and used only when needed (for access key rotation, which is performed        automatically).
 
   body = {"command": "create_account", "password": "KasaSmart_password"}
 
