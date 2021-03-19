@@ -6,6 +6,8 @@ This python module uses the OpenTPL API hosted on RapidAPI:  https://rapidapi.co
 
 You will need a RapidAPI account and key to utilize this module.  Complete documentation of the API is provided at the above link.
 
+Currently HS-110 , HS-100, and KP-115 Smart Plugs are supported. It may be possible to control other TP-Link smart plugs, but these have not been evaluated by the developer.
+
 Import:
 
 from opentpl import opentpl
@@ -42,11 +44,11 @@ The following are in order of the steps you'll need to follow to get started.
 
 -- Plug commands & data
 
-  The following call provides on/off control, status (online or offline) and reporting of current power data.
+  The following call provides on/off control, status (online or offline) and reporting of current power data.  Note that not all TP-Link smart plugs support power data reporting.
 
   Valid commands are "ON", "OFF", "status", and "data" (as in the below example).
 
-  Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re- establish before sending other commands.  If not possible, an error ("offline") will be returned.
+  Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re- establish before sending other commands.  If not possible, an error ("offline") will be returned.  
 
   body = {"command": "data", "plugid": "unique_plug_id"}
 
