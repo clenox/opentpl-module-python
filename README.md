@@ -15,7 +15,9 @@ Use:
 opentpl("uuid", body, "rapidAPIKey")
 
 -- "uuid" is the KasaSmart username of the account.  Note that multiple KasaSmart accounts can be associated with a single RapidAPI account (see below).
+
 -- body is the command dictionary (see below).
+
 -- "rapidAPIKey" is your unique alphanumeric key provided by RapidAPI.
 
 It typically takes 2 - 3 seconds for the API to return.  Please do not attempt to send queries / commands to a given plug more frequently than once every 3 seconds.
