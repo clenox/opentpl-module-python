@@ -1,6 +1,6 @@
 # opentpl-module-python
 
-Python module to access the OpenTPL web API for TP-Link Kasa Smart Plugs (OpenTPL is an unofficial API).
+Python module to conveniently access the OpenTPL web API for TP-Link Kasa Smart Plugs (OpenTPL is an unofficial API).
 
 This python module calls the OpenTPL API hosted on RapidAPI:  https://rapidapi.com/clenox/api/opentpl1
 
