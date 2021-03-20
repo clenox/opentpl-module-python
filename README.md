@@ -56,7 +56,7 @@ The following are in order of the steps you'll need to follow to get started.
   
   body = {"command": "data", "plugid": "unique_plug_id"}
   
-    Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re-   establish before sending other commands.  If not possible, an error ("offline") will be returned. 
+  Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re-   establish before sending other commands.  If not possible, an error ("offline") will be returned. 
 
 -- Delete (un-associate) KasaSmart account from OpenTPL
 
