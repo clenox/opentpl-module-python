@@ -10,11 +10,11 @@ There are other projects with the same objective of enabling smart home applicat
 
 Currently HS-110 , HS-100, and KP-115 Smart Plugs are supported. It may be possible to control other TP-Link smart plugs, but these have not been evaluated by the developer.
 
-Import:
+# Import:
 
 from opentpl import opentpl
 
-Use:
+# Use:
 
 opentpl("uuid", body, "rapidAPIKey")
 
@@ -26,7 +26,7 @@ opentpl("uuid", body, "rapidAPIKey")
 
 It typically takes 2 - 3 seconds for the API to return.  Please do not attempt to send queries / commands to a given plug more frequently than once every 3 seconds.
 
-Body:
+# Body:
 
 The following are in order of the steps you'll need to follow to get started.
 
@@ -46,7 +46,7 @@ The following are in order of the steps you'll need to follow to get started.
 
 -- Plug commands & data
 
-  The following call provides on/off control, status (online or offline) and reporting of current power data.  Note that not all TP-Link smart plugs support power data reporting.
+  The following call provides on/off control, status (online or offline) and reporting of current power data (emeter).  Note that not all TP-Link smart plugs support power data reporting.
 
   Valid commands are "ON", "OFF", "status", and "data" (as in the below example).
 
