@@ -1,10 +1,12 @@
 # opentpl-module-python
 
-Python module to access the OpenTPL API for data from and control of TP-Link Smart Plugs
+Python module to access the OpenTPL web API for TP-Link Kasa Smart Plugs (OpenTPL is an unofficial API).
 
-This python module uses the OpenTPL API hosted on RapidAPI:  https://rapidapi.com/clenox/api/opentpl1
+This python module calls the OpenTPL API hosted on RapidAPI:  https://rapidapi.com/clenox/api/opentpl1
 
-You will need a RapidAPI account and key to utilize this module.  Complete documentation of the API is provided at the above link.
+You will need a RapidAPI account (and key) to utilize this module.  Complete documentation of the API is provided at the above link.
+
+There are other projects with the same objective of enabling smart home application developers, but in most cases using this API will get you up and running the fastest.
 
 Currently HS-110 , HS-100, and KP-115 Smart Plugs are supported. It may be possible to control other TP-Link smart plugs, but these have not been evaluated by the developer.
 
@@ -28,9 +30,9 @@ Body:
 
 The following are in order of the steps you'll need to follow to get started.
 
--- Associate A New KasaSmart Account
+-- Associate A New Kasa Account
 
-  This is how you register a KasaSmart account for the first time to get access to it.  This only needs to be done once.
+  This is how you register a Kasa account for the first time to get access to it.  It only needs to be done once.
 
   KasaSmart_password is the password associated with the uuid.  These credentials are securely stored and used only when needed (for access key rotation, which is performed        automatically).
 
