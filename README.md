@@ -18,7 +18,7 @@ from opentpl import opentpl
 
 opentpl("uuid", body, "rapidAPIKey")
 
--- "uuid" is the KasaSmart username of the account.  Note that multiple KasaSmart accounts can be associated with a single RapidAPI account (see below).
+-- "uuid" is the Kasa account username.  Note that multiple Kasa accounts can be associated with a single RapidAPI account (see below).
 
 -- body is the command dictionary (see below).
 
@@ -32,15 +32,15 @@ The following are in order of the steps you'll need to follow to get started.
 
 -- Associate A New Kasa Account
 
-  This is how you register a Kasa account for the first time to get access to it.  It only needs to be done once.
+  This is how you register a Kasa account.  It only needs to be done once.
+  
+  body = {"command": "create_account", "password": "KasaSmart_password"}
 
   KasaSmart_password is the password associated with the uuid.  These credentials are securely stored and used only when needed (for access key rotation, which is performed        automatically).
 
-  body = {"command": "create_account", "password": "KasaSmart_password"}
-
 -- Get Plug Names
 
-  All calls to OpenTPL use unique alphanumeric plug IDs to avoid any potential conflict.  However, generally the location and/or function of each plug is indicated by the user   defined name / alias.  This command provides the mapping needed to associate each plug name to it's unique ID.
+  All calls to OpenTPL use unique alphanumeric plug IDs to avoid any potential conflict.  However, generally the location and/or function of each plug is indicated by the user   defined name / alias (in the Kasa app).  This command provides the mapping needed to associate each plug name to it's unique ID.
 
   body = {"command": "plug_names"}
 
