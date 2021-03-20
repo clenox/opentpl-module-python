@@ -46,13 +46,17 @@ The following are in order of the steps you'll need to follow to get started.
 
 -- Plug commands & data
 
-  The following call provides on/off control, status (online or offline) and reporting of current power data (emeter).  Note that not all TP-Link smart plugs support power data reporting.
+  The following call provides on/off control, status (online or offline) and reporting of current power data (emeter).  Note that not all TP-Link smart plugs support power data reporting. 
 
-  Valid commands are "ON", "OFF", "status", and "data" (as in the below example).
-
-  Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re- establish before sending other commands.  If not possible, an error ("offline") will be returned.  
-
+  body = {"command": "ON", "plugid": "unique_plug_id"}
+  
+  body = {"command": "OFF", "plugid": "unique_plug_id"}
+  
+  body = {"command": "status", "plugid": "unique_plug_id"}
+  
   body = {"command": "data", "plugid": "unique_plug_id"}
+  
+    Important note: the status command is not usually needed because the OpenTPL API automatically validates connectivity. If there is no connectivity, OpenTPL attempts to re-   establish before sending other commands.  If not possible, an error ("offline") will be returned. 
 
 -- Delete (un-associate) KasaSmart account from OpenTPL
 
