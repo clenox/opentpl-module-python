@@ -6,9 +6,9 @@ This python module calls the OpenTPL API hosted on RapidAPI:  https://rapidapi.c
 
 You will need a RapidAPI account (and key) to utilize this module.  Complete documentation of the API is provided at the above link.
 
-There are other projects with the same objective of enabling smart home application developers, but in most cases using this API will get you up and running the fastest.
+There are other projects with the same objective of enabling smart home application developers -- but in most cases, using this API will get you up and running the fastest.
 
-Currently HS-110 , HS-100, and KP-115 Smart Plugs are supported. It may be possible to control other TP-Link smart plugs, but these have not been evaluated by the developer.
+Currently HS-110 , HS-100, and KP-115 Smart Plugs and the HS-200 Smart Switch are verified to be supported. It may be possible to control other TP-Link smart plugs / switches, but these have not been evaluated by the developer.
 
 # Import:
 
