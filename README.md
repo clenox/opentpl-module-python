@@ -1,10 +1,10 @@
-# openkasa-module-python
+# opentpl-module-python
 
-Python module to conveniently access the OpenKasa (formerly OpenTPL) web API for KasaSmart Plugs and Switches.  
+Python module to conveniently access the OpenTPL web API for KasaSmart Plugs and Switches.  
 
-OpenKasa is an unofficial API and was not developed by or associated with TP-Link.
+OpenTPL is an unofficial API and was not developed by or associated with TP-Link / Kasa Smart.
 
-This python module calls the OpenKasa API hosted on RapidAPI:  https://rapidapi.com/clenox/api/opentpl1
+This python module calls the OpenTPL API hosted on RapidAPI:  https://rapidapi.com/clenox/api/opentpl1
 
 You will need a RapidAPI account (and key) to utilize this module.  Complete documentation of the API is provided at the above link.
 
@@ -42,7 +42,7 @@ The following are in order of the steps you'll need to follow to get started.
 
 -- Get Plug Names
 
-  All calls to OpenKasa use unique alphanumeric plug IDs to avoid any potential conflict.  However, in general the location and/or function of each plug is indicated by the user   defined name / alias (in the Kasa app).  This command provides the mapping needed to associate each plug name to it's unique ID.
+  All calls to OpenTPL use unique alphanumeric plug IDs to avoid any potential conflict.  However, in general the location and/or function of each plug is indicated by the user   defined name / alias (in the Kasa app).  This command provides the mapping needed to associate each plug name to it's unique ID.
 
   body = {"command": "plug_names"}
 
@@ -60,9 +60,9 @@ The following are in order of the steps you'll need to follow to get started.
   
   Important note: the status command is not usually needed because the OpenKasa API automatically validates connectivity. If there is no connectivity, OpenKasa attempts to re-   establish before sending other commands.  If not possible, an error ("offline") will be returned. 
 
--- Delete (un-associate) KasaSmart account from OpenKasa
+-- Delete (un-associate) KasaSmart account from OpenTPL
 
-  This deletes all information about the KasaSmart account associated with the uuid, including credentials, from OpenKasa.  Note this has no effect on the KasaSmart account itself.  if accidentally invoked this can be easily corrected by simply creating the account again.
+  This deletes all information about the KasaSmart account associated with the uuid, including credentials, from OpenTPL.  Note this has no effect on the KasaSmart account itself.  if accidentally invoked this can be easily corrected by simply creating the account again.
 
   body = {"command": "del_account"}
   
